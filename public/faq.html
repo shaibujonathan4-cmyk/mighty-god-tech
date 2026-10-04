@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ | Mighty God Aluminium Tech.</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand">
+        <div class="logo-badge">MG</div>
+        <div>
+          <div class="brand-title">MIGHTY GOD</div>
+          <div class="brand-sub">ALUMINIUM TECH.</div>
+        </div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="work.html">Our Work</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="faq.html" class="active">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="https://wa.me/2348050412872" target="_blank" class="btn btn-gold nav-btn">Get Quote</a>
+      <button class="menu-toggle" id="menuToggle"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>Frequently Asked Questions</h1>
+      <p>Everything you need to know about our services and process</p>
+    </div>
+  </section>
+
+  <section class="container faq-container">
+    <div class="faq-item">
+      <div class="faq-question">What specific services does Mighty God Aluminium Tech. offer? <i class="fa-solid fa-chevron-down"></i></div>
+      <div class="faq-answer">We specialize in aluminium windows, security & entrance doors, structural curtain walls, office glass partitions, frameless glass balustrades, shower cubicles, and custom cutting wall solutions.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Is Mighty God Aluminium Tech. a registered business? <i class="fa-solid fa-chevron-down"></i></div>
+      <div class="faq-answer">Yes, we are officially registered in Nigeria under RC: 7782776.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">How do I request a cost estimation or project measurement? <i class="fa-solid fa-chevron-down"></i></div>
+      <div class="faq-answer">You can call us directly at 08050412872 / 09069747397 or click the WhatsApp button to send us your project dimensions and site location for an instant quotation.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Where is your primary office and workshop located? <i class="fa-solid fa-chevron-down"></i></div>
+      <div class="faq-answer">Our main office is located at Aluminium Village, Dumez Along Kaduna Road, Behind Hefsiba Plaza, Kaduna State, Nigeria.</div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-container">
+      <p style="color:var(--text-muted);">© Mighty God Aluminium Tech.</p>
+      <div class="footer-motto">Your Vision • Our Expertise</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("menuToggle").addEventListener("click", () => document.getElementById("navLinks").classList.toggle("show"));
+    document.querySelectorAll(".faq-question").forEach(q => {
+      q.addEventListener("click", () => q.parentElement.classList.toggle("active"));
+    });
+  </script>
+</body>
+</html>
